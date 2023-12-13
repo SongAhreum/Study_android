@@ -8,5 +8,6 @@
 
 - ListView, custom adapter를 이용하여 item나열
 - 대화상자(알림,질의,목록) ,커스텀대화상자
-- dataBase사용하기
+- dataBase(SQLite)활용 CRUD구현
 
+#### day03
