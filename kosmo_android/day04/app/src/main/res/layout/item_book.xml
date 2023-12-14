@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10sp">
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="70sp"
+        android:layout_height="70sp"
+        android:src="@drawable/baseline_book_24"/>
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="제목"
+        android:layout_toRightOf="@id/image"
+        android:ellipsize="end"
+        android:lines="1"/>
+    <TextView
+        android:id="@+id/price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="책가격"
+        android:layout_toRightOf="@id/image"
+        android:layout_below="@id/title"/>
+    <TextView
+        android:id="@+id/authors"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="작가"
+        android:layout_toRightOf="@id/image"
+        android:layout_below="@id/price"/>
+</RelativeLayout>
