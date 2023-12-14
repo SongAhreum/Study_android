@@ -11,7 +11,7 @@ public class KakaoAPI {
             URL url = new URL(apiURL);
             HttpURLConnection con = (HttpURLConnection)url.openConnection();
             con.setRequestMethod("GET");
-            con.setRequestProperty("Authorization", "KakaoAK KEY");
+            con.setRequestProperty("Authorization", "KakaoAK d98342bfb3d10bd8a8d18f10982fe1c8");
             int responseCode = con.getResponseCode();
             BufferedReader br;
 

@@ -12,3 +12,9 @@
 
 #### day03
 - 주소록 CRUD기능구현
+
+#### day04
+- day03에서 이미지관련 issue해결 
+	- (첫 Activity(PermissionActivity)추가)
+- Kakao API 책검색 활용, JSON data로 read,search기능 구현	
+
