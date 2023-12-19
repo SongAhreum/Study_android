@@ -15,3 +15,7 @@
 #### day05
 - drawerLayout(네비게이션 드로어구현), ViewPager,TabLayout으로 탭기반 UI구현, FragmentPagerAdapter활용 Fragment전환 구현
 - Kakao API 블로그검색,책검색,키워드로 장소검색, Googlemap API
+#### day06
+- day06 + NaverAPI(책검색,상품검색) + 크롤링(영화순위,예매링크 이동) 
+#### day07
+- Firebase : Authentication(user 인증),Realtime Database(채팅기능),FireStore(게시글기능) 
