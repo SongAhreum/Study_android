@@ -18,4 +18,7 @@
 #### day06
 - day06 + NaverAPI(책검색,상품검색) + 크롤링(영화순위,예매링크 이동) 
 #### day07
-- Firebase : Authentication(user 인증),Realtime Database(채팅기능),FireStore(게시글기능) 
+- Firebase : Authentication(user 인증),Realtime Database(채팅기능),FireStore(게시글기능)
+#### day08
+- day07기능 + Firebase: Storage 활용하여 사진을올려서 상품등록하고 상품관련 채팅 기능 구현
+
