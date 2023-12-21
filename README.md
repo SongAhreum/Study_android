@@ -20,5 +20,6 @@
 #### day07
 - Firebase : Authentication(user 인증),Realtime Database(채팅기능),FireStore(게시글기능)
 #### day08
-- day07기능 + Firebase: Storage 활용하여 사진을올려서 상품등록하고 상품관련 채팅 기능 구현
-
+- day07기능 + Firebase: Storage 활용 사진업로드 이후 상품등록,해당 상품 채팅 기능 구현
+#### day09
+- Spring,android연동 : 회원정보관리 기능 구현(back:Spring CRUD),(front:android Read)
