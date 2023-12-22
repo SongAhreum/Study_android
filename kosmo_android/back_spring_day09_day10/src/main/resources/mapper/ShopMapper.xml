@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.mapper.ShopMapper">
+    <select id="list" resultType="hashmap">
+        select 
+        	*,date_format(regdate,'%Y-%m-%d') as fmtdate  
+        from shop 
+        order by pid desc
+		limit #{start},#{size}
+    </select>
+    <select id="total" resultType="int">
+    	select 
+        	count(*) 
+        from shop 
+    </select>
+    <insert id="insert">
+    	insert into shop (title,lprice,productId)
+    	value(#{title},#{lprice},"000")
+    </insert>
+    <select id="read" resultType="com.example.android.domain.ShopVO" parameterType="int">
+    	select * 
+        from shop
+        where pid = #{pid} 
+    </select>
+    <update id="update">
+    	update shop 
+    	set title = #{title} ,lprice = #{lprice}
+    	where pid = #{pid}
+    </update>
+    <update id="updateImage">
+    	update shop 
+    	set image = #{image} 
+    	where pid = #{pid}
+    </update>
+</mapper>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form name="frm">
+        <input value="17" name="pid">
+        <hr>
+        <input type="file" name="file">
+        <button type="submit">업로드</button>
+    </form>
+</body>
+<script>
+    $(frm).on("submit", function(e){
+        e.preventDefault();
+        if($(frm.file).val()=="") {
+            alert("업로드할 이미지를 선택하세요!");
+        }else{
+            //업로드
+            const formData = new FormData();
+            formData.append("file", $(frm.file)[0].files[0]);
+            formData.append("pid",$(frm.pid).val());
+            $.ajax({
+                type:"post",
+                url:"http:localhost:8080/shop/upload/image",
+                data:formData,
+                processData:false,
+                contentType:false,
+                success:function(){
+                    alert("업로드성공!");
+                }
+            })
+        }
+    });
+</script>    
+</html>
